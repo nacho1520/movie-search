@@ -20,39 +20,42 @@
     
 
     <section class="movie-ui">
-        <form class="search-bar">
+        <form class="search-bar" onsubmit="return false;">
             <img src="./assets/Search_alt.svg">
-            <input placeholder="Search movie">
+            <input placeholder="Search movie" id="user-input">
         </form>
 
         <div class="movie">
-            <img class="movie-img" src="./assets/avatar.webp">
+            <img class="movie-img">
             <div class="movie-info">
-                <p class="movie-title">Avatar: The Way of Water</p>
+                <p class="movie-title"></p>
                 <div class="genres">
-                    <span>Actions</span>
-                    <span>Adventure</span>
-                    <span>Fantasy</span>
                 </div>
-                <p class="movie-sinopsis">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
+                <p class="movie-sinopsis"></p>
                 <div class="info-row">
                     <p class="info-label">Director:</p>
-                    <p class="info">James Cameron</p>
+                    <p class="info" id="director">n</p>
                 </div>
                 <div class="info-row">
                     <p class="info-label">Writers:</p>
-                    <p class="info">James Cameron</p>
+                    <p class="info" id="writers"></p>
                 </div>
                 <div class="info-row">
                     <p class="info-label">Stars:</p>
-                    <p class="info">James Cameron</p>
+                    <p class="info" id="stars"></p>
                 </div>
                 <div class="info-row">
                     <p class="info-label">IMDb Rating:</p>
-                    <p class="info">James Cameron</p>
+                    <p class="info" id="rating"></p>
                 </div>
             </div>
         </div>
+
+        <div class="loader"></div>
+
+        <p class="not-found">Movie not found</p>
+
     </section>
 </body>
+<script src="./index.js"></script>
 </html>
