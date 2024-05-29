@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111729;
+  font-family: "Outfit", sans-serif;
+}
+
+.hero-img-container {
+  width: 100%;
+  height: 334px;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo-container {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  z-index: 10;
+}
+
+.movie-ui {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 62px;
+}
+
+.search-bar {
+  position: absolute;
+  top: -32px;
+  width: 573px;
+  padding: 20px 0 20px 28px;
+  background-color: #20293A;
+  border-radius: 16px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.search-bar input {
+  font-size: 1rem;
+  color: #677489;
+  background: none;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+.search-bar input::-moz-placeholder {
+  font-size: 1rem;
+  color: #677489;
+}
+.search-bar input::placeholder {
+  font-size: 1rem;
+  color: #677489;
+}
+
+.movie {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  border: solid 2px #20293A;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.movie-img {
+  width: 184px;
+  height: 268px;
+  border-radius: 12px;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  color: #E3E8EF;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.genres {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.genres span {
+  background-color: #20293A;
+  padding: 4px 12px 4px 12px;
+  border-radius: 50px;
+  color: #97A3B6;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.movie-sinopsis {
+  max-width: 537px;
+  color: #97A3B6;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.info-label {
+  color: #97A3B6;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.info {
+  color: #E3E8EF;
+  font-size: 0.75rem;
+  font-weight: 600;
+}/*# sourceMappingURL=index.css.map */
